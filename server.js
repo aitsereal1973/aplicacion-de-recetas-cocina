@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 // Conexión a la base de datos
-mongoose.connect('mongodb://localhost/aplicacion-de-recetas', {
+mongoose.connect('mongodb://username:password@localhost/aplicacion-de-recetas', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => {

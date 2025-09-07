@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 // Conexión a la base de datos
-mongoose.connect(`mongodb://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@localhost:27017/aplicacion-de-recetas?retryWrites=true`, {
+mongoose.connect(`mongodb://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@localhost:27017/aplicacion-de-recetas?retryWrites=true&ssl=true`, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => {

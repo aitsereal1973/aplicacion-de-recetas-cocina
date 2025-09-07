@@ -13,7 +13,7 @@ mongoose.connect(`mongodb://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD
 }).then(() => {
     console.log('Base de datos conectada!');
 }).catch(err => {
-    console.log('Error al conectar a la base de datos:', err);
+    console.error('Error al conectar a la base de datos:', err.message);
 });
 
 // Rutas simples
